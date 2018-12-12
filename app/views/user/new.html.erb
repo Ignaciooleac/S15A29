@@ -1,0 +1,19 @@
+<%= form_with(model: @user) do |form| %>
+    <div class="form_group">
+  <%= form.label :name %>
+  <% form.text_field :first_name, id: :user_name %>
+  </div>
+
+  <div class="form_group">
+  <%= form.label :email %>
+  <% form.text_field :first_name, id: :user_email %>
+  </div>
+
+  <div class="form_group">
+  <%= form.label :password %>
+  <% form.text_field :first_name, id: :user_password %>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+  
+    <% end %>
